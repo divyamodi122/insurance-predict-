@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Dataset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        header {
+            background-color: #004466;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #004466;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        .buttonGroup {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 20px;
+            position: relative;
+        }
+        .buttonGroup button {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            border: 1px solid #004466;
+            color: #004466;
+            font-weight: bold;
+        }
+        .buttonGroup button:hover {
+            background-color: #e0e0e0;
+        }
+        .insurance-img {
+            width: 100vw;
+            z-index: -2;
+            position: absolute;
+            top: 0;
+            opacity: 0.4;
+        }
+        footer {
+            background-color: #004466;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insurance Dataset</h1>
+    <p>Hello this is my insurance claim charges webpage </p>
+</header>
+
+<section>
+    <h2>Insurance Data Overview</h2>
+    <p>Below is a small sample of the insurance dataset used for prediction of premium or charges:</p>
+
+    <table>
+        <tr>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>BMI</th>
+            <th>Children</th>
+            <th>Smoker</th>
+            <th>Region</th>
+            <th>Charges (₹)</th>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Female</td>
+            <td>27.9</td>
+            <td>0</td>
+            <td>Yes</td>
+            <td>Southwest</td>
+            <td>16884.92</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Male</td>
+            <td>22.0</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Northwest</td>
+            <td>5649.12</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Female</td>
+            <td>30.1</td>
+            <td>3</td>
+            <td>No</td>
+            <td>Southeast</td>
+            <td>9782.90</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Male</td>
+            <td>26.2</td>
+            <td>2</td>
+            <td>Yes</td>
+            <td>Southwest</td>
+            <td>18235.68</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Female</td>
+            <td>31.4</td>
+            <td>0</td>
+            <td>No</td>
+            <td>Northwest</td>
+            <td>8269.04</td>
+        </tr>
+    </table>
+</section>
+
+<div class="buttonGroup">
+    
+    <a href="/project"><button>Charges Predictor</button></a>
+  
+</div>
+
+<img src="https://img.freepik.com/free-photo/insurance-protection-health-care-concept_23-2151076033.jpg" 
+     alt="insurance" class="insurance-img">
+
+<footer>
+    <p>&copy; 2024 Insurance Prediction Project. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
