@@ -1,6 +1,7 @@
 from flask import Flask, request ,render_template , url_for
 import joblib
 model = joblib.load('model.pkl')
+print("hello hii ")
 
 app =Flask(__name__)
 
